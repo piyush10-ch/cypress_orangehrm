@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "push": "git add . && git commit -m \"Project Update: Added new modules/tests\" && git push origin main",
+  "clean-push": "git rm -r --cached . && git add . && git commit -m \"Cleanup and Push\" && git push origin main",
+  "cy:open": "npx cypress open",
+  "cy:run": "npx cypress run"
   },
   "keywords": [],
   "author": "",
