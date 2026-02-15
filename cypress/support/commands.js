@@ -10,7 +10,9 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+ Cypress.Commands.add('logout', () => { return cy.get('.oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon').click(),
+       cy.contains('a','Logout').should('be.visible').click();
+ })
 //
 //
 // -- This is a child command --
