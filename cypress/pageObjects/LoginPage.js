@@ -8,5 +8,14 @@ login(un,pw){
    this.loginbtn.click()
 
 }    
+get forgotpassword(){return cy.get('.oxd-text.oxd-text--p.orangehrm-login-forgot-header')}
+
+
+forgotpswrd(){
+    this.forgotpassword.click()
+    cy.get('.orangehrm-forgot-password-button--cancel').should('be.visible').click()
+
+
+}
 }
 export default new Login ();
